@@ -1,0 +1,15 @@
+<h2>Admin Zone</h2>
+
+<h3>User Management</h3>
+
+<ul>
+  {{#each userArray}}
+  <h4>{{this.fullName}}</h4>
+
+  <ul>
+    <li>Email:{this.Email}</li>
+      <li>Role:{this.role}</li>
+        <li>Joined:>{this.createdAt}</li>
+  </ul>
+  {{/each}}
+</ul>
